@@ -1,0 +1,28 @@
+Package: RNAseqFast
+Type: Package
+Title: RNAseq Analysis Pipelines (Easy to Use) 
+Version: 0.1.5
+Author: c(person("Feng", "Jiang", email = "fengjiang94@yahoo.com",
+        role = c("cre", "aut"), comment = c(ORCID = "0000-0002-8953-6498")))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: An R package for RNAseq differential expression analysis and visualization, in an easy and reproducible way.
+    This package is suitable for outputs from RNAseqPE pipeline.
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Roxygen: list(markdown = TRUE)
+Depends: 
+    R(>= 3.5.0),
+Imports:
+    DESeq2,
+    EnhancedVolcano,
+    clusterProfiler,
+    ggplot2,
+    org.Hs.eg.db,
+    org.Mm.eg.db,
+    pheatmap,
+    RColorBrewer
+    
+
+

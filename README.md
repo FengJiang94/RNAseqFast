@@ -2,7 +2,7 @@
 # RNAseqFast
 An R package containing functions for basic RNAseq differential expression analysis and GO analysis. 
 
-This package was orignally designed for the downstream analysis after running [RNAseqPE](https://github.com/sunyumail93/PipeRNAseq), yet can be used for any mouse or human RNA-seq data. 
+This package was orignally designed for the downstream analysis after running [RNAseqPE](https://github.com/FengJiang94/RNAseqPE), yet can be used for any mouse or human RNA-seq data. 
 
 To use with RNA-seq data generated using other pipelines, please make sure the input files follow the same format as the example inputs.
 
@@ -40,7 +40,7 @@ To perform GO analysis, _org.Mm.eg.db_(mouse) and _org.Hs.eg.db_(human) are requ
 
 ```
 library(devtools)
-install_github("sunyumail93/RNAseqFast")
+install_github("FengJiang94/RNAseqFast")
 
 library(RNAseqFast)
 ```
@@ -67,7 +67,7 @@ A matrix containing log2FoldChange and Pvalue for each non coding gene (if lnc=T
 - **GOnKegg**: A function to perform GO and Kegg analysis given a gene list. 
 
 Here is an example  to perform DE analysis for RNA-seq:
-Input data used here can be downloaded from the Example inputs
+Input data used here can be downloaded from [Example inputs](https://github.com/FengJiang94/ExampleData).
 
 ```
 library(RNAseqFast)
@@ -166,7 +166,7 @@ genes <- rownames(ApplevsBanana[ApplevsBanana$log2FoldChange > 1 & ApplevsBanana
 ## Go and KEGG
 GOnKEGG(sign_de_gene = genes, filename = "RNAseq")
 ```
-Output for the above script can be downloaded from the Example outputs.
+Output for the above script can be downloaded from the [Example Outputs](https://github.com/FengJiang94/ExampleData).
 
 
 

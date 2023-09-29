@@ -1,9 +1,0 @@
-sample_name,short_name,condition,condition_2
-T329_T_2D,apple_1,apple,total
-c_9_1_1_p,banana_poly1,banana,polysome
-c_9_1_2_p,banana_poly2,banana,polysome
-KO_2_p,apple_poly1,apple,polysome
-KO_3_p,apple_poly2,apple,polysome
-c_9_T_1,banana_1,banana,total
-c_9_T_1D,banana_2,banana,total
-T329_T_3,apple_2,apple,total

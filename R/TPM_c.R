@@ -51,7 +51,7 @@ TPM_c <- function(Assay = Assay,
   }
   countdata<-counts_matrix
   countdata$Length <- lengthdata
-  countdata <- countdata[!is.na(countdata$length),]
+  countdata <- countdata[!is.na(countdata$Length),]
   # calculate TPM
   kb <- countdata$Length / 1000
   rpk <- countdata / kb
